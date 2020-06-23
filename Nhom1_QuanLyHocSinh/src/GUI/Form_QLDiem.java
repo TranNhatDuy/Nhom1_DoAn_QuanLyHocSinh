@@ -578,17 +578,23 @@ public class Form_QLDiem extends javax.swing.JFrame {
 
     private void btnXemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXemActionPerformed
         // TODO add your handling code here:
-        showDiem(0, 10);
-        String sl = String.valueOf(DiemBLL.SLHS());
-        String hsg = String.valueOf(DiemBLL.SLHSByHocLuc("HSG"));
-        String hsk = String.valueOf(DiemBLL.SLHSByHocLuc("HSK"));
-        String hstb = String.valueOf(DiemBLL.SLHSByHocLuc("HSTB"));
-        String hsy = String.valueOf(DiemBLL.SLHSByHocLuc("HSY"));
-        lbSLHS.setText(sl+" HS");
-        lbHSG.setText(hsg);
-        lbHSK.setText(hsk);
-        lbHSTB.setText(hstb);
-        lbHSY.setText(hsy);
+    	try {
+			showDiem(0, 10);
+	        String sl = String.valueOf(DiemBLL.SLHS());
+	        String hsg = String.valueOf(DiemBLL.SLHSByHocLuc("HSG"));
+	        String hsk = String.valueOf(DiemBLL.SLHSByHocLuc("HSK"));
+	        String hstb = String.valueOf(DiemBLL.SLHSByHocLuc("HSTB"));
+	        String hsy = String.valueOf(DiemBLL.SLHSByHocLuc("HSY"));
+	        lbSLHS.setText(sl+" HS");
+	        lbHSG.setText(hsg);
+	        lbHSK.setText(hsk);
+	        lbHSTB.setText(hstb);
+	        lbHSY.setText(hsy);
+		} catch (Exception e) {
+			// TODO: handle exception
+			JOptionPane.showMessageDialog(null, "Không có học sinh","Lỗi", JOptionPane.ERROR_MESSAGE);
+		}
+        
     }//GEN-LAST:event_btnXemActionPerformed
 
     private void cbHocLucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbHocLucActionPerformed
