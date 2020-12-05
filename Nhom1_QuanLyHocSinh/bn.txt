@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿Chào thầy,
 Em gửi thầy bài tập cá nhân của nhóm.
 Đề bài: vẽ mô hình DFD quản lý bán hàng (30/10/2020 - 5/11/2020).
@@ -45,3 +46,10 @@ Vì vậy âm nhạc có vai trò quan trọng trong đời sống, bởi lẽ c
 
 
 
+=======
+ab
+aa
+cc
+aaaaaaaaa
+dfdfdfd
+>>>>>>> Stashed changes
